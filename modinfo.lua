@@ -1,4 +1,15 @@
--- Mod Template
+--[[---------------------------------------------------------------------------
+	
+	This script is mandatory. Mod Loader will look in the folder for this file
+	and if it doesn't find modinfo.lua, the mod wont get loaded.
+	
+	You get two ways to insert your mod into the game; a script that Mod Loader
+	will attach to the player for you, or, with a function that is called once
+	when the player logs in.
+
+	You can use both methods in a single mod, if you need to.
+
+--]]---------------------------------------------------------------------------
 
 package.path = package.path .. ";data/scripts/mods/?.lua"
 local Config = require("modtemplate/config")
